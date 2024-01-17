@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Jeff's Diner</h1>
+            <p>The best food this side of the Mississipi</p>
+        </header>   
+        <main>
+            <section id="menu">
+                <!-- Menu items here -->
+            </section>
+
+            <section class="order hidden" id="orderEl">
+                <h1>Your order</h1>
+                <div id="order" ></div>
+                <hr>
+                <div class="price">
+                    <!-- Cart Items here -->
+                    <h2>Total Price:</h1>
+                    <p id="price"></p>
+                </div>
+                <button id="purchase-btn" class="purchase-btn" >Complete Order</button>
+            </section>
+
+            <div id="payment-modal" class="hidden">
+                <form>
+                    <h1>Enter card details</h1>
+                    <input type="text" id="custName" placeholder="Enter your name" required>
+                    <input type="text" id="card-number" placeholder="Enter card number" required>
+                    <input type="text" id="cvv" placeholder="Enter CVV" required>
+                    <button type="submit" class="purchase-btn" id="pay-btn">Pay</button>
+                </form>
+            </div>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
